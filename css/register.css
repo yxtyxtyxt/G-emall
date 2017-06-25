@@ -1,0 +1,260 @@
+body{
+	font-family: "宋体";
+	font-size: 12px;
+}
+.register_header{
+	height: 90px;
+	border-bottom: 1px solid #e0e0e0;
+	line-height: 90px;
+	overflow: hidden;
+}
+.register_header_logo{
+	position: relative;
+	height: 90px;
+}
+.register_header_logo{
+	float: left;
+}
+.welcome_register{
+	float: left;
+	font-size:26px;
+	text-indent: 25px;
+	color: #454545;
+	font-family: "微软雅黑";
+	padding-top: 13px;
+	background:url(../img/register/pay_sprites.png) no-repeat -618px -185px;
+}
+.app_2weima{
+	float: right;
+}
+.register_index{
+	width: 1000px;
+	margin: 40px auto;
+	border: 1px solid #ddd;
+	box-shadow: 1px 1px 2px #ccc;
+	/*height: 634px;*/
+	overflow: hidden;
+}
+.register_index_title{
+	background: #ececec;
+	height: 60px;
+	border-bottom: 1px solid #ddd;
+}
+.register_index_title_left p{
+	float: left;
+	width: 195px;
+	font-size: 14px;
+	color: #464646;
+	font-weight: 600;
+	text-align: center;
+	line-height: 60px;
+	position: relative;
+}
+.register_index_title_left p span{
+	display: block;
+	background:url(../img/register/pay_sprites.png) no-repeat -12px -258px;
+	color: #fff;
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	line-height: 20px;
+	font-weight: 400;
+	margin-top: 10px;
+	font-size: 12px;
+	right:33px;
+	top:-1px;
+}
+.register_index_title_left .on{
+	background: #fff;
+	color: #b50005;
+	box-sizing: border-box;
+	border-top: 2px solid #B50005;
+}
+.register_index_title_right{
+	float: right;
+	font-size: 14px;
+	line-height: 60px;
+	padding-right: 15px;
+	
+}
+.register_box{
+	padding: 10px 10px 60px 10px;
+	overflow: hidden;
+}
+.register_box{
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+.register_box_left{
+	width: 610px;
+	float: left;
+	padding-left: 35px;
+	padding-top: 30px;
+}
+.register_box_left form{
+	position: relative;
+}
+.register_table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.register_table td{
+	height: 40px;
+	line-height: 40px;
+	padding:15px 0;
+	position: relative;
+	
+}
+.register_table td span{
+	padding-right: 30px;
+	display: inline-block;
+	text-align: right;
+	font-size: 14px;
+	color: #414141;
+}
+.register_table td span i{
+	color: #f00;
+}
+#addOffice{
+	width: 250px;
+}
+#idcode{
+	position: absolute;
+	display: block;
+	width: 70px;
+	height: 30px;
+	top:17px;
+	right:32px;
+}
+.position_next{
+	position: absolute;
+	right:-62px;
+}
+#cellPhone_num{
+	width: 250px;
+}
+.wrong{
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 8px;
+	background: #ffeeee none repeat scroll 0 0;
+	border: 1px solid #f1bebe;
+	border-radius: 3px;
+	color: #d72125;
+	display:none;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 5px;
+}
+.phoneNum_wrong{
+	right:-153px;
+}
+.input_code{
+	height: 30px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 5px;
+	line-height: 30px;
+}
+#yanzhengCode{
+	width: 120px;
+}
+.yanzhengCode_wrong{
+	left:1px;
+	top:49px;
+}
+.getYcellPhoneCode{
+	width: 130px; 
+	height: 40px;
+	display:inline-block;
+	border: none;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	background: #434343;
+	color: #fff;
+	font-size: 14px;
+	margin-left: 0;
+	vertical-align: middle;	 	
+}
+.YcellPhoneCode_wrong{
+	right:-10px;
+	top: 160px;
+}
+#userPassword{
+	width: 250px;
+	height: 30px;	
+}
+.userPassword_wrong{
+	top:47px;
+}
+#addHuman{
+	width: 250px;
+	height: 30px;
+}
+.btn_class{
+	width: 150px;
+	height: 42px;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+	background: #b50005;
+	margin-top: -15px;
+}
+.register_box_right{
+	width: 320px;
+	float: left;
+	padding-top: 55px;
+}
+.register_box_right .msg{
+	width: 240px;
+	height: 190px;
+	background: #f0f9ea;
+	font-family: "微软雅黑";
+	float: right;
+	border: 1px solid #e9e9e9;
+}
+.title{
+	font-size: 24px;
+	color: #B50005;
+	padding: 33px 0 12px 0;
+	text-align: center;
+}
+.text{
+	font-size: 14px;
+	color: #686868;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.text span{
+	font-size: 14px;
+    color: #78bb4b;
+    line-height:30px;
+    background: url(../img/register/pay_sprites.png) no-repeat -612px -471px;
+    padding-left: 15px;
+    text-decoration: underline;
+}
+.link{
+	width: 110px;
+	height: 30px;
+	margin: auto;
+	background: #78bb4b;
+}
+.link a{
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-weight: 600;
+}
+.register_index_title_left p a{
+	float: left;
+	width: 195px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}

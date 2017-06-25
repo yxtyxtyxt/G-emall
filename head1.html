@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<!--<link rel="icon" href="img/icon_03.png" type="image/x-icon"/>-->
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<title>盖象商城</title>
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				//获取cookie,判断是否用户已登录;
+				var users = getCookie("loginedUsers");
+				if(users){
+					$('.head_login_register').find('.missu').eq(0).siblings().remove();
+					$('<span class="missu" style="color: #111;font-size: 14px;">用户' + users + '&nbsp;&nbsp;</span><a href="javascript:;" id="fk_off">退出</a>').appendTo($('.head_login_register'));
+				}
+				//点击退出时候，删除cookie;并恢复界面
+				$('#fk_off').click(function(){
+					removeCookie("loginedUsers");
+					$('.head_login_register').find('.missu').eq(0).siblings().remove();
+					$('<a href="login.html">请登录&nbsp;</a><a href="register.html" style="color: #c20005;">注册</a>').appendTo($('.head_login_register'));
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<!--头部Start-->
+		<div class="head-wrap">
+			<div class="head">
+				<a href="index.html" class="gx_home">盖象首页</a>
+				<div class="head_login_register">
+					<span class="missu">
+						想你了，欢迎来到盖象! &nbsp;&nbsp;
+					</span>
+					<a href="login.html">请登录&nbsp;</a>
+					<a href="register.html" style="color: #c20005;">注册</a>
+				</div>
+				<div class="gx_head">
+				<a href="" class="head_shopcar" title="购物车">
+					购物车
+					<span class="head_shocar_num">0</span>
+				</a>
+				<div class="my_gx">
+					<a href="">我的盖象</a>
+					<span></span>
+					<div class="my_gx_menu">
+						<a href="#">我的订单</a><br />
+						<a href="#">我的钱包</a>
+					</div>
+				</div>
+				<div class="my_gx">
+					<a href="">收藏夹</a>
+					<span></span>
+					<div class="my_gx_menu">
+						<a href="#">收藏的商品</a><br />
+						<a href="#">收藏的店铺</a>
+					</div>
+				</div>
+				<div class="my_gx">
+					<a href="">商家支持</a>
+					<span></span>
+					<div class="my_gx_menu">
+						<a href="#">商家入驻</a><br />
+						<a href="#">合作加盟</a><br />
+						<a href="#">盖网终端机</a>
+					</div>
+				</div>
+				<a href="#" class="cellapp">手机APP</a>
+				<div class="head_language">
+					<select class="">
+						<option value="简体中文" selected="selected">简体中文</option>
+						<option value="繁体中文">繁体中文</option>
+					</select>
+				</div>
+				
+			</div>
+			</div>
+			<script type="text/javascript">
+				$('.my_gx').mouseover(function(){
+					$(this).addClass('my_gx_hover').find('.my_gx_menu').css('display','block');
+				}).mouseout(function(){
+					$(this).removeClass('my_gx_hover').find('.my_gx_menu').css('display','none');
+				})
+				
+			</script>
+		</div>
+		<!--头部end-->
+		<!--Logo&搜索栏Start-->
+		<div class="logoSearch">
+			<a href="index.html" class="logo"><img src="img/top_logo.png" title="盖象商城"/></a>
+			<a href="#" class="logo_add"><img src="img/logo_add.gif" title="盖网定制微软手机" alt="盖网定制微软手机"/></a>
+			<div class="nav_search">
+				<div class="nav_search_Text">
+					<form id="home-form" action="" target="_blank" method="get">
+						<div class="searchText">
+							<input type="text" placeholder="请输入关键词搜索"/>
+						</div>
+						<button class="searchButton"></button>
+					</form>
+				</div>	
+				<div class="hotSearch">
+					<a href="#">手机</a>
+					<a href="#">服装</a>
+					<a href="#">电脑</a>
+					<a href="#">台式机</a>
+					<a href="#">iPhone</a>
+				</div>
+			</div>
+			<a href="#" target="_blank" class="gxAPP"><img src="img/gxAPPwx.png" alt="盖象优选APP 微信公众号"/></a>
+		</div>
+		<!--Logo&搜索栏Start-->
+		<!--导航Start-->
+		<div class="nav_wrap">
+			<div class="gx_nav">
+				<div class="gx_nav_left">
+					全部商品分类
+					<div class="gx_nav_left_list" style="display: none;">
+						<ul>
+							<li>
+								<div class="gx_nav_class"><a href="#" title="家用电器"><span>家用电器</span></a></div>
+								<div class="gx_nav_item">
+									<div class="gx_nav_item_text">
+										<div class="gx_nav_item_fei">
+											<a href="#" title="飞利浦">飞利浦</a>
+										</div>
+										<!--<dl>
+											<dt><a href="#" title="大家电">大家电</a></dt>
+											<dd>
+												<a href="#" title="冰箱">冰箱</a>&nbsp;|&nbsp;
+												<a href="#" title="家庭影院">家庭影院</a>&nbsp;|&nbsp;
+												<a href="#" title="热水器">热水器</a>&nbsp;|&nbsp;
+												<a href="#" title="冰箱">冰箱</a>&nbsp;|&nbsp;
+												<a href="#" title="家庭影院">家庭影院</a>&nbsp;|&nbsp;
+												<a href="#" title="热水器">热水器</a>&nbsp;|&nbsp;
+												<a href="#" title="冰箱">冰箱</a>&nbsp;|&nbsp;
+												<a href="#" title="家庭影院">家庭影院</a>&nbsp;|&nbsp;
+												<a href="#" title="热水器">热水器</a>&nbsp;|&nbsp;
+												<a href="#" title="冰箱">冰箱</a>&nbsp;|&nbsp;
+												<a href="#" title="家庭影院">家庭影院</a>&nbsp;|&nbsp;
+												<a href="#" title="热水器">热水器</a>&nbsp;|&nbsp;
+												<a href="#" title="冰箱">冰箱</a>&nbsp;|&nbsp;
+												<a href="#" title="家庭影院">家庭影院</a>&nbsp;|&nbsp;
+												<a href="#" title="热水器">热水器</a>&nbsp;|&nbsp;
+												<a href="#" title="冰箱">冰箱</a>&nbsp;|&nbsp;
+												<a href="#" title="家庭影院">家庭影院</a>&nbsp;|&nbsp;
+												<a href="#" title="热水器">热水器</a>&nbsp;|&nbsp;
+												<a href="#" title="冰箱">冰箱</a>&nbsp;|&nbsp;
+												<a href="#" title="家庭影院">家庭影院</a>&nbsp;|&nbsp;
+												<a href="#" title="热水器">热水器</a>&nbsp;|&nbsp;
+											</dd>
+										</dl>-->
+									</div>
+									<div class="gx_nav_item_img">
+										<!--<a href="#" title="飞利浦"><img src="img/nav_right_img/1.jpg" width="168" height="48"/></a>
+										<a href="#" title="飞利浦"><img src="img/nav_right_img/2.jpg" width="168" height="48"/></a>
+										<a href="#" title="飞利浦"><img src="img/nav_right_img/3.jpg" width="168" height="48"/></a>
+										<a href="#" title="飞利浦"><img src="img/nav_right_img/4.jpg" width="168" height="48"/></a>
+										<a href="#" title="飞利浦"><img src="img/nav_right_img/5.jpg" width="168" height="203"/></a>-->
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="gx_nav_class"><a href="#" title="服饰鞋帽"><span>服饰鞋帽</span></a></div>
+								<div class="gx_nav_item" style="display: none;">
+									<div class="gx_nav_item_text"></div>
+									<div class="gx_nav_item_img"></div>
+								</div>
+							</li>
+							<li>
+								<div class="gx_nav_class"><a href="" title="个护化妆"><span>个护化妆</span></a></div>
+								<div class="gx_nav_item" style="display: none;">
+									<div class="gx_nav_item_text"></div>
+									<div class="gx_nav_item_img"></div>
+								</div>
+							</li>
+							<li>
+								<div class="gx_nav_class"><a href="" title="手机数码"><span>手机数码</span></a></div>
+								<div class="gx_nav_item" style="display: none;">
+									<div class="gx_nav_item_text"></div>
+									<div class="gx_nav_item_img"></div>
+								</div>
+							</li>
+							<li>
+								<div class="gx_nav_class"><a href="" title="电脑办公"><span>电脑办公</span></a></div>
+								<div class="gx_nav_item" style="display: none;">
+									<div class="gx_nav_item_text"></div>
+									<div class="gx_nav_item_img"></div>
+								</div>
+							</li>
+							<li>
+								<div class="gx_nav_class"><a href="" title="运动保健"><span>运动保健</span></a></div>
+								<div class="gx_nav_item" style="display: none;">
+									<div class="gx_nav_item_text"></div>
+									<div class="gx_nav_item_img"></div>
+								</div>
+							</li>
+							<li>
+								<div class="gx_nav_class"><a href="" title="家居服装"><span>家居服装</span></a></div>
+								<div class="gx_nav_item" style="display: none;">
+									<div class="gx_nav_item_text"></div>
+									<div class="gx_nav_item_img"></div>
+								</div>
+							</li>
+							<li>
+								<div class="gx_nav_class"><a href="" title="饮料食品"><span>饮料食品</span></a></div>
+								<div class="gx_nav_item" style="display: none;">
+									<div class="gx_nav_item_text"></div>
+									<div class="gx_nav_item_img"></div>
+								</div>
+							</li>
+							<li>
+								<div class="gx_nav_class"><a href="" title="腕表箱包"><span>腕表箱包</span></a></div>
+								<div class="gx_nav_item" style="display: none;">
+									<div class="gx_nav_item_text"></div>
+									<div class="gx_nav_item_img"></div>
+								</div>
+							</li>
+							<li>
+								<div class="gx_nav_class"><a href="" title="珠宝首饰"><span>珠宝首饰</span></a></div>
+								<div class="gx_nav_item" style="display: none;">
+									<div class="gx_nav_item_text"></div>
+									<div class="gx_nav_item_img"></div>
+								</div>
+							</li>
+							<li>
+								<div class="gx_nav_class"><a href="" title="汽车用品"><span>汽车用品</span></a></div>
+								<div class="gx_nav_item" style="display: none;">
+									<div class="gx_nav_item_text"></div>
+									<div class="gx_nav_item_img"></div>
+								</div>
+							</li>
+							<li>
+								<div class="gx_nav_class"><a href="" title="母婴玩具"><span>母婴玩具</span></a></div>
+								<div class="gx_nav_item" style="display: none;">
+									<div class="gx_nav_item_text"></div>
+									<div class="gx_nav_item_img"></div>
+								</div>
+							</li>
+							<li>
+								<div class="gx_nav_class"><a href="" title="文化艺术/宠物"><span>文化艺术/宠物</span></a></div>
+								<div class="gx_nav_item" style="display: none;">
+									<div class="gx_nav_item_text"></div>
+									<div class="gx_nav_item_img"></div>
+								</div>
+							</li>
+							<li>
+								<div class="gx_nav_class"><a href="" title="休闲旅游"><span>休闲旅游</span></a></div>
+								<div class="gx_nav_item" style="display: none;">
+									<div class="gx_nav_item_text"></div>
+									<div class="gx_nav_item_img"></div>
+								</div>
+							</li>
+						</ul>
+						<script type="text/javascript">
+							/* -- - 二级菜单鼠标移入移出事件 - --*/
+							$('.gx_nav_left_list ul li').mouseover(function(){
+								$(this).find('.gx_nav_item').css('display','block')
+								$(this).find(".gx_nav_class").css('background','#f7f7f7').find('a span').css('color','#C20005')
+							}).mouseout(function(){
+								$(this).find('.gx_nav_item').css('display','none')
+								$(this).find(".gx_nav_class").css('background','transparent').find('a span').css('color','#fefefe')
+							})
+							
+							$('.gx_nav_item_fei').mouseover(function(){
+								$(this).find('a').css('background','#c20005')
+							}).mouseout(function(){
+								$(this).find('a').css('background','#242424')
+							})
+							/*    JSON调用     */
+							$.getJSON("js/nav_list.json",function(data){
+								/* —— 二级菜单文字内容  —— */
+								var listText = data.list_nav;
+								//console.log(listText);
+								$.each(listText,function(i){
+									var nav2Arr = listText[i].list_num;
+									//console.log(nav2Arr)
+									$.each(nav2Arr, function(j) {//list_nav[i].list_num[i]
+										var nav3Arr = nav2Arr[j].titleA[1].more
+//										console.log(nav3Arr)
+										$("<dl><dt><a href='#' title='" + nav2Arr[j].titleA[0].titleB + "'>" + nav2Arr[j].titleA[0].titleB + "</a></dt><dd></dd></dl>").appendTo($(".gx_nav_left_list ul li").eq(i).find(".gx_nav_item > .gx_nav_item_text"))
+										$.each(nav3Arr, function(n) {
+											if( n < nav3Arr.length - 1){
+												$("<a href='#'>" + nav3Arr[n] + "</a><i>&nbsp;|&nbsp;<i>").appendTo($(".gx_nav_left_list ul li").eq(i).find(".gx_nav_item > .gx_nav_item_text > dl > dd").eq(j))	
+											}else if(n === nav3Arr.length - 1){
+												$("<a href='#'>" + nav3Arr[n] + "</a>").appendTo($(".gx_nav_left_list ul li").eq(i).find(".gx_nav_item > .gx_nav_item_text > dl > dd").eq(j))
+											}
+											
+										});
+									});
+								});
+								/* —— 广告图  —— */
+								var listImg = data.list_img
+								$.each(listImg, function(i){
+//									console.log(ADDimg[0]);
+									var arr = listImg[i].list
+									$.each(arr, function(j) {
+//										console.log(arr[j])
+										$("<a href='#' title='" + arr[j].title + "'><img src='" + arr[j].src + "'></a>").appendTo($(".gx_nav_left_list ul li").eq(i).find(".gx_nav_item > .gx_nav_item_img"))
+									});
+								});
+							})
+							
+						
+						</script>
+					</div>
+					<script type="text/javascript">//鼠标移入商品分类时，二级菜单显示
+					$('.gx_nav_left').mouseover(function(){
+						$('.gx_nav_left_list').css('display','block');
+					})
+					
+					$('.gx_nav_left_list').mouseout(function(){
+						$(this).css('display','none');
+					})
+					
+					setInterval(loadCart,30)
+			
+					function loadCart(){
+						var cartStr = getCookie("cart");
+				        var cartObj = convertCartStrToObj(cartStr);
+						//获取到购物车中所有商品的数量
+						if(!cartStr){
+							$('.head_shocar_num').text(0);
+						}else{
+							var total = 0;
+							for(var id in cartObj){
+								total += cartObj[id].num;
+							}
+							$('.head_shocar_num').text(total);
+						}
+		 			}
+					</script>
+				</div>
+				<div class="gx_nav_right">
+					<a title="优品汇" href="#" class="gx_nav_sel">优品汇</a>
+					<a title="五维自营" href="#">五维自营</a>
+					<a title="盖象超市" href="#">盖象超市</a>
+					<a title="电器城" href="#">电器城</a>
+					<a title="至优旅游" href="#">至优旅游</a>
+					<a title="线下服务" href="#">线下服务</a>
+				</div>
+			</div>
+		</div>
+		<!--导航End-->
+	</body>
+</html>

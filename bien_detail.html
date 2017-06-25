@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
+		<link rel="icon" href="http://www.g-emall.com/favicon.ico" type="mage/x-icon">
+		<title>销量第一 Haier/海尔 BCD-206STPA/206升三门家用电冰箱/软冷冻/冷藏冷冻A135 【价格 参数 评测 图片】– 盖象商城</title>
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" ></script>
+		<!--<script src="js/shopping/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--<script src="js/1_jquery-fly/jquery.fly.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/requestAnimationFrame.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/shopping/js/jquery.fly.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				//获取cookie,判断是否用户已登录;
+				var users = getCookie("loginedUsers");
+				if(users){
+					$('.head_login_register').find('.missu').eq(0).siblings().remove();
+					$('<span class="missu" style="color: #111;font-size: 14px;">用户' + users + '&nbsp;</span><a href="javascript:;" id="fk_off">退出</a>').appendTo($('.head_login_register'));
+				}
+				//点击退出时候，删除cookie;并恢复界面
+				$('#fk_off').click(function(){
+					removeCookie("loginedUsers");
+					$('.head_login_register').find('.missu').eq(0).siblings().remove();
+					$('<a href="login.html">请登录&nbsp;</a><a href="register.html" style="color: #c20005;">注册</a>').appendTo($('.head_login_register'));
+				})
+				//加载footer
+				$('#footer').load('footer.html');
+			})
+		</script>
+		<title>盖象商城</title>
+	</head>
+	<body>
+		<!--头部Start-->
+		<div class="head-wrap">
+			<div class="head">
+				<a href="index.html" class="gx_home">盖象首页</a>
+				<div class="head_login_register">
+					<span class="missu">
+						想你了，欢迎来到盖象! &nbsp;&nbsp;
+					</span>
+					<a href="login.html">请登录&nbsp;</a>
+					<a href="register.html" style="color: #c20005;">注册</a>
+				</div>
+				<div class="gx_head">
+				<a href="" class="head_shopcar" title="购物车">
+					购物车
+					<span class="head_shocar_num">0</span>
+				</a>
+				<div class="my_gx">
+					<a href="">我的盖象</a>
+					<span></span>
+					<div class="my_gx_menu">
+						<a href="#">我的订单</a><br />
+						<a href="#">我的钱包</a>
+					</div>
+				</div>
+				<div class="my_gx">
+					<a href="">收藏夹</a>
+					<span></span>
+					<div class="my_gx_menu">
+						<a href="#">收藏的商品</a><br />
+						<a href="#">收藏的店铺</a>
+					</div>
+				</div>
+				<div class="my_gx">
+					<a href="">商家支持</a>
+					<span></span>
+					<div class="my_gx_menu">
+						<a href="#">商家入驻</a><br />
+						<a href="#">合作加盟</a><br />
+						<a href="#">盖网终端机</a>
+					</div>
+				</div>
+				<a href="#" class="cellapp">手机APP</a>
+				<div class="head_language">
+					<select class="">
+						<option value="简体中文" selected="selected">简体中文</option>
+						<option value="繁体中文">繁体中文</option>
+					</select>
+				</div>
+				
+			</div>
+			</div>
+			<script type="text/javascript">
+				$('.my_gx').mouseover(function(){
+					$(this).addClass('my_gx_hover').find('.my_gx_menu').css('display','block');
+				}).mouseout(function(){
+					$(this).removeClass('my_gx_hover').find('.my_gx_menu').css('display','none');
+				})
+				
+			</script>
+		</div>
+		<!--头部end-->
+		<!--Logo&搜索栏Start-->
+		<div class="logoSearch">
+			<a href="index.html" class="logo"><img src="img/top_logo.png" title="盖象商城"/></a>
+			<ul class="company">
+				<li>
+					<a href="#" target="_blank">广州市创世诺贸易有限公司</a>
+					<span>主营：所有类别</span>
+				</li>
+				<li>
+					<ul class="company_grade">
+						<li>描述</li>
+						<li>服务</li>
+						<li>物流</li>
+						<li><span style="color: #C20005;">4.91</span></li>
+						<li><span style="color: #C20005;">4.92</span></li>
+						<li><span style="color: yellowgreen">4.93</span></li>
+						<li class="icon"></li>
+					</ul>
+				</li>
+				<li></li> <!--左边框，非空。-->
+			</ul>
+			<div class="nav_search" style="margin: 26px 0 0 0">
+				<div class="nav_search_Text">
+					<form id="home-form" action="" target="_blank" method="get">
+						<div class="searchText">
+							<input type="text" placeholder="请输入关键词搜索"/>
+						</div>
+						<button class="searchButton"></button>
+					</form>
+				</div>	
+				<div class="hotSearch">
+					<a href="#">手机</a>
+					<a href="#">服装</a>
+					<a href="#">电脑</a>
+					<a href="#">台式机</a>
+					<a href="#">iPhone</a>
+				</div>
+			</div>
+		</div>
+		<!--Logo&搜索栏 End-->
+		<!--收藏-->
+		<div class="shouCangShop_wrap">
+			<div class="shouCangShop">
+				<div>收藏本店</div>
+			</div>
+		</div>
+		<!--物品详情 start-->
+		<div class="detail_main_wrap">
+			<div class="detail_main">
+				<div class="detail_main_left">
+					<div class="blow_up">
+						<!--缩略图 start-->
+						<div class="leftBien">
+							<div class="bienImg">
+								<span class="imgZoom">
+       								<img width="419" height="420" src="img/detail/1.jpg"/>
+       								<img width="419" height="420" src="img/detail/2.jpg"/>
+       								<img width="419" height="420" src="img/detail/3.jpg"/>
+       							</span>
+       							<span class="zhe"></span><!--遮罩-->
+       							<span class="mirror"></span>
+       							<div class="bigImg" style="background: #fff;">
+       								<img src="img/detail/1.jpg" width="840" height="840" style="display: block; z-index: 100;"/>
+       								<img src="img/detail/2.jpg" width="840" height="840"/>
+       								<img src="img/detail/3.jpg" width="840" height="840"/>
+       							</div>
+							</div>
+							<div class="imgUl">
+   								<a href="javascript:;" class="prev"></a>
+   								<a href="javascript:;" class="next"></a>
+   								<div class="items">
+   									<ul>
+   										<li>
+   											<img width="60" height="60" src="img/detail/1.jpg"/>
+   										</li>
+   										<li>
+   											<img width="60" height="60" src="img/detail/2.jpg"/>
+   										</li>
+   										<li>
+   											<img width="60" height="60" src="img/detail/3.jpg"/>
+   										</li>
+   									</ul>
+   								</div>
+   								<script type="text/javascript">
+   								//鼠标移入列表图片时，显示对应的大图
+   									$('.items ul li').mouseover(function(){
+   										//$('<img width="840" height="840" src="img/detail/' + ($(this).index() + 1) + '".jpg/>').appendTo($('.bigImg')).
+   										$('.imgZoom img').eq($(this).index()).css({'display':'block','z-index':3}).siblings().css({'display':'none','z-index':0})
+   										$('.bigImg img').eq($(this).index()).css({'display':'block','z-index':100}).siblings().css({'display':'none','z-index':0})
+   									})
+   								//鼠标移入大图
+	   								$('.zhe').mouseover(function(evt){
+	   									//显示放大镜和大图
+	   									$('.mirror').css('display','block')
+	   									$('.bigImg').css('display','block')
+	   									evt = evt || window.event;
+	   									var disX = evt.offsetX;
+			   							var disY = evt.offsetY;
+			   							$('.mirror').css({'left':disX,'top':disY})
+			   							//设置放大镜的left、top值，以及移动范围。
+		   								$('.zhe').mousemove(function(evt){
+		   									evt = evt || window.event;
+			   								var mirrorX = evt.pageX - $('.zhe').offset().left - $('.mirror').width()/2;
+			   								var mirrorY = evt.pageY - $('.zhe').offset().top - $('.mirror').height()/2;
+			   								//设置边界  X
+			   								if(mirrorX < 0){
+			   									mirrorX = 0;
+			   								}else if(mirrorX > $('.zhe').width() - $('.mirror').width()){
+			   									mirrorX = $('.zhe').width() - $('.mirror').width()
+			   								}
+			   								//设置边界  Y
+			   								if(mirrorY < 0){
+			   									mirrorY = 0;
+			   								}else if(mirrorY > $('.zhe').height() - $('.mirror').height()){
+			   									mirrorY = $('.zhe').height() - $('.mirror').height()
+			   								}
+			   								//mirror的left 和 top 值跟着鼠标的移动而改变
+		   									$('.mirror').css({'left':mirrorX,'top':mirrorY})
+		   									$('.bigImg img').css({'left':- mirrorX * 2,'top':-mirrorY * 2})
+		   								})
+	   								})
+	   								//鼠标移除大图
+	   								$('.zhe').mouseout(function(){
+	   									$('.mirror').css('display','none')
+	   									$('.bigImg').css('display','none')
+	   								})
+   								</script>
+   							</div>
+   							<ul class="bianHao">
+   								<li>商品编号：41576</li>
+   								<li>
+   									<a href="#" target="_blank">分享</a>
+   								</li>
+   								<li>
+   									<a href="#" target="_blank">收藏商品</a>
+   								</li>
+   							</ul>
+						</div>
+						<!--缩略图 end-->
+						<div class="rightBien" data-ID = "coldBOX">
+							<h2>销量第一 Haier/海尔 BCD-206STPA/206升三门家用电冰箱/软冷冻/冷藏冷冻A135</h2>
+							<ul class="gray_bg">
+								<li>零售价</li>
+								<li class="jiaGe">￥1499.00</li>
+								<li>换购积分</li>
+								<li class="boom">3331.11积分</li>
+							</ul>
+							<dl class="bigAddress">
+								<dt>运费</dt>
+								<dd>
+									<span>广东广州市&nbsp;至&nbsp;</span>
+									<div class="address">
+										<span>广东广州市</span>
+										<i></i>
+									</div>
+									<span>快递&nbsp;￥300.00</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt>数量</dt>
+								<dd class="countBox">
+									<input type="text" id="bien_count" value="1" />
+									<span class="ad">
+										<i></i>
+										<i></i>
+									</span>
+									<span>库存126件</span>
+								</dd>
+								<dt></dt> <!--占位用，非空白--> 
+								<dd class="buyNow">
+									<a href="javascript:;" target="_blank">立即购买</a>
+									<a href="javascript:;" target="_blank" class="takeToMyCar">加入购物车</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="bien_moreDetail">
+						<div class="bien_moreDetail_left">
+							<div class="shop_info">
+								<div class="shop_info_title">
+									广州市创士诺贸易有限公司
+								</div>
+								<ul>
+									<li>描述</li>
+									<li>服务</li>
+									<li>物流</li>
+									<li>4.91</li>
+									<li>4.92</li>
+									<li>4.93</li>
+								</ul>
+								<a href="#">进店逛逛</a>
+								<a href="#">收藏本店</a>
+							</div>
+							<div class="shop_nav_left">
+								<div class="shop_nav_classify">
+									店铺分类
+								</div>
+								<ul id="nav_left">
+									<li>
+										<span>
+											<a href="javascript:;" target="_blank">液晶电视</a>
+										</span>	
+										<div class="shop_nav_classify_more" >
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+										</div>
+									</li>
+									<li>
+										<span>
+											<a href="javascript:;" target="_blank">液晶电视</a>
+										</span>	
+										<div class="shop_nav_classify_more" >
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+										</div>
+									</li>
+									<li>
+										<span>
+											<a href="javascript:;" target="_blank">液晶电视</a>
+										</span>	
+										<div class="shop_nav_classify_more" >
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+										</div>
+									</li>
+									<li>
+										<span>
+											<a href="javascript:;" target="_blank">液晶电视</a>
+										</span>	
+										<div class="shop_nav_classify_more" >
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+										</div>
+									</li>
+									<li>
+										<span>
+											<a href="javascript:;" target="_blank">液晶电视</a>
+										</span>	
+										<div class="shop_nav_classify_more" >
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+										</div>
+									</li>
+									<li>
+										<span>
+											<a href="javascript:;" target="_blank">液晶电视</a>
+										</span>	
+										<div class="shop_nav_classify_more" >
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+										</div>
+									</li>
+									<li>
+										<span>
+											<a href="javascript:;" target="_blank">液晶电视</a>
+										</span>	
+										<div class="shop_nav_classify_more" >
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+										</div>
+									</li>
+									<li>
+										<span>
+											<a href="javascript:;" target="_blank">液晶电视</a>
+										</span>	
+										<div class="shop_nav_classify_more" >
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+										</div>
+									</li>
+									<li>
+										<span>
+											<a href="javascript:;" target="_blank">液晶电视</a>
+										</span>	
+										<div class="shop_nav_classify_more" >
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+											<a href="#" target="_blank">三星电视</a>
+											/
+											<a href="#" target="_blank">LG电视</a><br />
+										</div>
+									</li>
+								</ul>
+								<div class="sellingHot">
+									<div class="soHot_title">
+										热销商品
+									</div>
+									<ul>
+										<li>
+											<a href="#" target="_blank" class="imgs">
+												<img src="img/detail/60_60.jpg" width="60" height="60"/>
+											</a>
+											<div class="bien_name_money">
+												<a href="#" target="_blank">【创士诺】 Galanz/格兰仕 </a>
+												<span>￥541.00</span>
+											</div>
+										</li>
+										<li>
+											<a href="#" target="_blank" class="imgs">
+												<img src="img/detail/60_60.jpg" width="60" height="60"/>
+											</a>
+											<div class="bien_name_money">
+												<a href="#" target="_blank">【创士诺】 Galanz/格兰仕 </a>
+												<span>￥541.00</span>
+											</div>
+										</li>
+										<li>
+											<a href="#" target="_blank" class="imgs">
+												<img src="img/detail/60_60.jpg" width="60" height="60"/>
+											</a>
+											<div class="bien_name_money">
+												<a href="#" target="_blank">【创士诺】 Galanz/格兰仕 </a>
+												<span>￥541.00</span>
+											</div>
+										</li>
+										<li>
+											<a href="#" target="_blank" class="imgs">
+												<img src="img/detail/60_60.jpg" width="60" height="60"/>
+											</a>
+											<div class="bien_name_money">
+												<a href="#" target="_blank">【创士诺】 Galanz/格兰仕 </a>
+												<span>￥541.00</span>
+											</div>
+										</li>
+										<li>
+											<a href="#" target="_blank" class="imgs">
+												<img src="img/detail/60_60.jpg" width="60" height="60"/>
+											</a>
+											<div class="bien_name_money">
+												<a href="#" target="_blank">【创士诺】 Galanz/格兰仕 </a>
+												<span>￥541.00</span>
+											</div>
+										</li>
+										<li style="border: 0;">
+											<a href="#" target="_blank" class="imgs">
+												<img src="img/detail/60_60.jpg" width="60" height="60"/>
+											</a>
+											<div class="bien_name_money">
+												<a href="#" target="_blank">【创士诺】 Galanz/格兰仕 </a>
+												<span>￥541.00</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="sellingHot">
+									<div class="soHot_title">
+										新品推荐
+									</div>
+									<ul>
+										<li>
+											<a href="#" target="_blank" class="imgs">
+												<img src="img/detail/samsung.jpg" width="60" height="60"/>
+											</a>
+											<div class="bien_name_money">
+												<a href="#" target="_blank">三星新品65英寸UHD超高清电视6系列UA65KU6300</a>
+												<span>￥9599.00</span>
+											</div>
+										</li>
+										<li>
+											<a href="#" target="_blank" class="imgs">
+												<img src="img/detail/60_60.jpg" width="60" height="60"/>
+											</a>
+											<div class="bien_name_money">
+												<a href="#" target="_blank">【创士诺】 Galanz/格兰仕 </a>
+												<span>￥541.00</span>
+											</div>
+										</li>
+										<li>
+											<a href="#" target="_blank" class="imgs">
+												<img src="img/detail/samsung.jpg" width="60" height="60"/>
+											</a>
+											<div class="bien_name_money">
+												<a href="#" target="_blank">三星新品65英寸UHD超高清电视6系列UA65KU6300</a>
+												<span>￥9599.00</span>
+											</div>
+										</li>
+										<li>
+											<a href="#" target="_blank" class="imgs">
+												<img src="img/detail/60_60.jpg" width="60" height="60"/>
+											</a>
+											<div class="bien_name_money">
+												<a href="#" target="_blank">【创士诺】 Galanz/格兰仕 </a>
+												<span>￥541.00</span>
+											</div>
+										</li>
+										<li>
+											<a href="#" target="_blank" class="imgs">
+												<img src="img/detail/samsung.jpg" width="60" height="60"/>
+											</a>
+											<div class="bien_name_money">
+												<a href="#" target="_blank">三星新品65英寸UHD超高清电视6系列UA65KU6300</a>
+												<span>￥9599.00</span>
+											</div>
+										</li>
+										<li style="border: 0;">
+											<a href="#" target="_blank" class="imgs">
+												<img src="img/detail/60_60.jpg" width="60" height="60"/>
+											</a>
+											<div class="bien_name_money">
+												<a href="#" target="_blank">【创士诺】 Galanz/格兰仕 </a>
+												<span>￥541.00</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<script type="text/javascript">
+									function moreClick(){
+										$('#nav_left li').click(function(){
+											$(this).find('div').toggleClass('d_block');
+										})
+									}
+									moreClick();
+								</script>
+							</div>
+						</div>
+						<div class="bien_moreDetail_right">
+							<div class="bien_moreDetail_right_title">
+								<ul>
+									<li class="xuanZhong">商品详情</li>
+									<li>累计评价<span>(5)</span></li>
+									<li>维权介入</li>
+									<li>商品资讯(0)</li>
+								</ul>
+								<div></div>
+							</div>
+							<div class="bien_moreDetail_right_main">
+								<!--切换-1商品详情 start-->
+								<div id="bien_moreDetail_right_main_tab1" class="piu">
+									<div class="tab_info">
+										<span>品牌名称:</span>
+									</div>
+									<div class="imgShow">
+										<p class="CP_canShu"><span>产品参数：</span></p>
+										<ul>
+											<li><p>证书编号：2009010701372489</p></li>
+											<li><p>证书状态：有效</p></li>
+											<li><p>申请人名称：青岛海尔股份有限公司</p></li>
+											<li><p>制造商名称：青岛海尔股份有限公司</p></li>
+											<li><p>产品名称：冷藏冷冻箱</p></li>
+											<li title="见附件"><p>3C产品型号：见附件</p></li>
+											<li title="Haier/海尔 BCD-206STPA"><p>产品名称：Haier/海尔 BCD-206STPA</p></li>
+											<li title=" BCD-206STPA"><p>海尔冰箱型号: BCD-206STPA</p></li>
+											<li title=" 冷藏冷冻冰箱"><p>冰箱冷柜机型: 冷藏冷冻冰箱</p></li>
+											<li title=" 直冷"><p>制冷方式: 直冷</p></li>
+											<li title=" 三门式"><p>箱门结构: 三门式</p></li>
+											<li title=" 二级"><p>能效等级: 二级</p></li>
+										</ul>
+										<p>
+											<img src="img/detail/1.jpg" width="750" height="750"/>
+										</p>
+										<p>
+											<img src="img/detail/2.jpg" width="750" height="750"/>
+										</p>
+										<p>
+											<img src="img/detail/3.jpg" width="750" height="750"/>
+										</p>
+									</div>
+								</div>
+								<!--切换-1商品详情 end-->
+								<!--切换-2客户评价 start-->
+								<div id="bien_moreDetail_right_main_tab2"  class="piu" style="display: none;">
+									<div class="clients_talk_title">
+										<div class="clients_talk_title_left">
+											与描述相符：
+											<span>4.68</span>
+										</div>
+										<div class="clients_talk_title_right">
+											买家印象:
+											<ul>
+												<li>物美价廉</li>
+												<li>正品</li>
+											</ul>
+										</div>
+									</div>
+									<div class="clients_talk_2title">
+										<ul>
+											<li>
+												全部评价
+												<span>(5)</span>
+											</li>
+											<li>
+												有图评价
+												<span>(0)</span>
+											</li>
+										</ul>
+										<span class="but">
+											按点赞排
+										</span>
+										<span class="but">
+											按时间排
+										</span>
+									</div>
+									<div class="pingJia_wrap">
+										<div class="pingJia">
+											<ul>
+												<li>
+													<p class="boom">不错</p>
+													<div class="math_star">
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+													</div>
+													<div class="who_time">
+														GW9****561<br />
+														<span>2017-01-01 20:10&nbsp;&nbsp;&nbsp;&nbsp;</span>
+														<span>赞(0)</span>
+													</div>
+												</li>
+												<li>
+													<p class="boom">不错</p>
+													<div class="math_star">
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+													</div>
+													<div class="who_time">
+														GW9****561<br />
+														<span>2017-01-01 20:10&nbsp;&nbsp;&nbsp;&nbsp;</span>
+														<span>赞(0)</span>
+													</div>
+												</li>
+												<li>
+													<p class="boom">不错</p>
+													<div class="math_star">
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+													</div>
+													<div class="who_time">
+														GW9****561<br />
+														<span>2017-01-01 20:10&nbsp;&nbsp;&nbsp;&nbsp;</span>
+														<span>赞(0)</span>
+													</div>
+												</li>
+												<li>
+													<p class="boom">不错</p>
+													<div class="math_star">
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+													</div>
+													<div class="who_time">
+														GW9****561<br />
+														<span>2017-01-01 20:10&nbsp;&nbsp;&nbsp;&nbsp;</span>
+														<span>赞(0)</span>
+													</div>
+												</li>
+												<li>
+													<p class="boom">不错</p>
+													<div class="math_star">
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+														<img src="img/detail/pord_gradeico.png"/>
+													</div>
+													<div class="who_time">
+														GW9****561<br />
+														<span>2017-01-01 20:10&nbsp;&nbsp;&nbsp;&nbsp;</span>
+														<span>赞(0)</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--切换-2客户评价 end-->
+								<!--维权介入 stArt-->
+								<div class="Yoo">
+									
+								</div>
+								<!--维权介入 end-->
+								<!--商品资讯 start-->
+								<div class="ppXia">
+									
+								</div>
+								<!--商品资讯 end-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--右侧栏-->
+				<div class="detail_main_right">
+					<div class="detail_main_right_title">
+						<span>猜你喜欢</span>
+					</div>
+					<ul class="detail_guessUlike">
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/detail/samsung_phone.jpg" width="110" height="110"/>
+							</a>
+							<span>￥2679.00</span>
+							<a href="http://www.g-emall.com/JF/309761.html" title="智勇手机  三星 Galaxy Note4 N9109W电信版 机身储存16GB 运行内存3GB 全国包邮">智勇手机  三星 Galaxy No...</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/detail/samsung_phone.jpg" width="110" height="110"/>
+							</a>
+							<span>￥2679.00</span>
+							<a href="http://www.g-emall.com/JF/309761.html" title="智勇手机  三星 Galaxy Note4 N9109W电信版 机身储存16GB 运行内存3GB 全国包邮">智勇手机  三星 Galaxy No...</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="img/detail/samsung_phone.jpg" width="110" height="110"/>
+							</a>
+							<span>￥2679.00</span>
+							<a href="http://www.g-emall.com/JF/309761.html" title="智勇手机  三星 Galaxy Note4 N9109W电信版 机身储存16GB 运行内存3GB 全国包邮">智勇手机  三星 Galaxy No...</a>
+						</li>
+						<li style="border: none;">
+							<a href="#" target="_blank">
+								<img src="img/detail/samsung_phone.jpg" width="110" height="110"/>
+							</a>
+							<span>￥2679.00</span>
+							<a href="http://www.g-emall.com/JF/309761.html" title="智勇手机  三星 Galaxy Note4 N9109W电信版 机身储存16GB 运行内存3GB 全国包邮">智勇手机  三星 Galaxy No...</a>
+						</li>
+						<a href="javascript:;" class="gr_renovateBut">换一批</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="right"></div>
+		<script type="text/javascript">
+			//选项卡切换
+			$('.bien_moreDetail_right_title ul li').click(function(){
+				$(this).addClass('xuanZhong').siblings().removeClass();
+				$('.piu').eq($(this).index()).css('display','block').siblings().css('display','none')
+			})
+			//设置数量框只能输入数字
+			$('#bien_count').keyup(function(){
+				if(!(/^[0-9]+$/.test($('#bien_count').val()))){
+					$('#bien_count').val(1);
+				}
+			})
+			//设置加减按钮
+			$('.ad i').eq(0).click(function(){
+				var $JIA = parseInt($('#bien_count').val()) + 1;
+				$('#bien_count').val($JIA);
+			})
+			$('.ad i').eq(1).click(function(){
+				if(parseInt($('#bien_count').val()) == 0){
+					return;
+				}
+				var $JIAn = parseInt($('#bien_count').val()) - 1;
+				$('#bien_count').val($JIAn);
+			})
+//			loadCart();
+			//按钮添加事件
+			$('.takeToMyCar').click(function(){
+				var goodID = $(this).parent().parent().parent().attr('data-ID');
+				var goodSRC = $('.imgZoom img').eq(0).attr('src');
+				var goodName = "海尔 BCD-206STPA/206升三门家用电冰箱";
+				var goodPrice = "1499";
+				var goodNum = parseInt($('#bien_count').val());
+				//获取cookie
+//				console.log($.cookie('cart') ? $.cookie("cart") : "")
+				var cartStr = getCookie("cart") ? getCookie("cart") : "";
+				var cartObj = convertCartStrToObj(cartStr);
+//				console.log(cartStr + ":" + cartObj)
+				if(goodID in cartObj){
+					cartObj[goodID].num += goodNum;
+				}else{
+					cartObj[goodID] = {
+						name : goodName,
+						price : goodPrice,
+						src : goodSRC,
+						num : goodNum
+					}
+				}
+				//将新添加的物品存入cookie
+				cartStr = convertObjToCartStr(cartObj);
+				console.log(cartObj + ":" + cartStr)
+				setCookie("cart",cartStr,7);
+				//弹窗提示加入购物车成功（简版），无动画效果
+				alert('添加购物车成功');
+			})
+			//封装一个加载的函数
+			   function loadCart(){
+					var cartStr = getCookie("cart") ? getCookie("cart") : "";
+			        var cartObj = convertCartStrToObj(cartStr);
+					//获取到购物车中所有商品的数量
+					var total = 0;
+					for(var id in cartObj){
+						total += cartObj[id].num;
+					}
+					$("#bien_count").val(total);
+	 			}
+			//设置物品飞向购物车的动画
+			
+			
+			//设置最头部的购物车读取数量
+			setInterval(loadCart,30)
+			
+				function loadCart(){
+					var cartStr = getCookie("cart");
+			        var cartObj = convertCartStrToObj(cartStr);
+					//获取到购物车中所有商品的数量
+					if(!cartStr){
+						$('.head_shocar_num').text(0);
+					}else{
+						var total = 0;
+						for(var id in cartObj){
+							total += cartObj[id].num;
+						}
+						$('.head_shocar_num').text(total);
+					}
+	 			}
+		</script>
+		
+		<!--物品详情 end-->
+		<!--footer Start-->
+		<div id="footer"></div>
+		<!--footer End-->
+	</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册_填写账户信息_盖网_盖象商城</title>
+		<link rel="icon" href="http://www.g-emall.com/favicon.ico" type="mage/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="icode/css/jquery.idcode.css"/>
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.idcode.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				//验证码
+				$.idcode.setCode();
+				$('#Txtidcode').blur(function(){
+					var IsBy = $.idcode.validateCode();
+					if(IsBy){
+						$('.yanzhengCode_wrong').css('display','none');
+					}else{
+						$('.yanzhengCode_wrong').css('display','block');
+					}
+				})
+				//手机号验证正则
+				$('#cellPhone_num').blur(function(){
+					console.log(/*'13264065517' + ":" +*/ $('#cellPhone_num').val() )
+					var phoneNum = $('#cellPhone_num').val();
+				    if(!(/^1[34578]\d{9}$/.test(phoneNum))){ 
+				          $('.phoneNum_wrong').css('display','block');
+				        return false; 
+				    }else{
+				    	$('.phoneNum_wrong').css('display','none');
+				    }
+				})
+				//密码正则验证
+				$('#userPassword').blur(function(){
+					var userPassword = $('#userPassword').val();
+					if(!(/^[a-zA-Z0-9]{6,10}$/.test(userPassword))){
+						$('.userPassword_wrong').css('display','block');
+					}else{
+						$('.userPassword_wrong').css('display','none');
+					}
+				})
+				//注册 获取Cookie
+				$('.btn_class').click(function(){
+ 
+					var userPhoneNum = $('#cellPhone_num').val();
+					var userPhoneCode = $('#userPassword').val();
+//					var nicheng = "";
+					//检测用户名是否已存在
+					var users = getCookie("registerUsers") ? getCookie("registerUsers") : "";
+					//将字符串转为对象
+					users = convertStrToObj(users);
+					if(userPhoneNum in users){ //判断用户的ID是否在users对象中。
+						alert("用户名已经被注册");
+						return;
+					}else{
+						//注册成功，设置用户信息的cookie
+						//registerUsers 设置cookie的name(key)值
+						//将用户添加到已注册用户列表对象中
+						users[userPhoneNum] = userPhoneCode;
+						//将对象转化回字符串，以便于设置cookie
+						userStr = convertObjToStr(users);
+						//设置cookie
+						setCookie("registerUsers",userStr,7);
+						console.log(decodeURIComponent(document.cookie))
+						alert("注册成功！");
+					}
+				})	
+			})
+		</script>
+	</head>
+	<body>
+		<div class="register_wrap">
+			<!--头部-->
+			<div class="register_header">
+				<div class="w1200">
+					<div class="register_header_logo">
+						<a href="index.html" target="_blank">
+							<img src="img/login/register_logo.jpg" width="213" height="86"/>
+						</a>
+					</div>
+					<div class="welcome_register">欢迎注册</div>
+					<div class="app_2weima">
+						<a href="#" target="_blank">
+							<img src="img/register/84617e1c8baadad77b3de493d0b4e270.png" width="190" height="88"/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--头部 end-->
+			<!--main start-->
+			<div class="register_main w1200">
+				<div class="register_index">
+					<div class="register_index_title">
+						<div class="register_index_title_left">
+							<p class="on"><a href="#">普通用户注册</a></p>
+							<p><a href="register_qy.html">企业用户注册</a></p>
+							<p><a href="register_k.html">用户快速注册</a>
+							<span>快</span></p>
+						</div>
+						<div class="register_index_title_right">
+							已有账号？
+							<a href="login.html" style="color: #C20005;">马上登录>></a>
+						</div>
+					</div>
+					<div class="register_contant">
+						<div class="register_box">
+							<div class="register_box_left">
+								<form method="post">
+									<table class="register_table">
+										<tbody>
+											<tr>
+												<td>
+													<span>
+														<i>*</i>
+														<label for="cellPhone_num">手机号码：</label>
+													</span>
+												</td>
+												<td>
+													<div class="phoneNum_wrong wrong" style="display: none;">
+														手机号码不可为空或格式不正确
+													</div>
+													<input maxlength="16" class="input_code" id="cellPhone_num" type="text">
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<span><i>*</i>
+														<label for="Txtidcode">验证码：</label>
+													</span>
+												</td>
+												<td>
+													<input maxlength="8" class="txtVerification input_code" type="text" id="Txtidcode" placeholder="区分大小写，请认真填写"/>
+													<span id="idcode"></span>
+													<a href="javascript:$.idcode.setCode();" target="_blank" class="position_next">
+														看不清，换一张
+													</a>
+													<div class="yanzhengCode_wrong wrong" style="display: none;">
+														验证码不能为空或验证码错误
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<span><i>*</i>
+														<label for="cellPhoneCode">手机验证码：</label>
+													</span>
+												</td>
+												<td>
+													<input maxlength="16" class="input_code" type="text" id="cellPhoneCode"/>
+													<a href="#" target="_blank" class="getYcellPhoneCode">获取验证码</a>
+													<div class="YcellPhoneCode_wrong wrong">
+														手机验证码不可为空或验证码错误
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<span>
+														<i>*</i>
+														<label for="uesrPassword">密码：</label>
+													</span>
+												</td>
+												<td>
+													<input type="password" id="userPassword" class="input_code"/>
+													<div class="userPassword_wrong wrong">
+														密码不可为空或密码不符合要求
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<span>
+														<label for="addHuman">推广人会员号：</label>
+													</span>
+												</td>
+												<td>
+													<input maxlength="16" type="text" id="addHuman" class="input_code"/>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" style="text-align: center;">
+													<span>&nbsp;</span>
+													<a href="#" target="_blank" class="agreement" style="color: #333;font-weight: 600">《盖象商城用户入驻协议》</a><br />
+													<span>&nbsp;</span>
+													<input type="button" class="btn_class" value="同意协议并注册" />
+												</td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+								</form>
+							</div>
+							<div class="register_box_right">
+								<div class="msg">
+									<p class="title">免手机快速注册</p>
+									<p class="text">暂无手机号码？选择快速注册</p>
+									<p class="link">
+										<a href="#">免手机注册</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--main end-->
+		</div>
+	</body>
+</html>

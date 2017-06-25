@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录-盖网-盖象商城</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="icon" href="http://www.g-emall.com/favicon.ico" type="mage/x-icon">
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#login').click(function(){
+					//获取用户名和密码
+					var userName = $('#userName').val();
+					var userPassWord = $('#user_password').val();
+					//判断用户名和密码是否为空
+					if(/^\s+$/.test($('#userName'))){
+						$('#userNameError').css('display','block')
+						return;
+					}else{
+						$('#userNameError').css('display','none')
+					};
+					if(/^\s+$/.test($('#user_password'))){
+						$('#passwordError').css('display','block')
+						return;
+					}else{
+						$('#passwordError').css('display','none')
+					};
+					//检测用户名密码是否匹配
+					//查找cookie中的信息
+					var users = getCookie("registerUsers");
+					//将字符串转为对象
+					users = convertStrToObj(users);
+					if(users[userName] == userPassWord){
+					//登录成功
+						setCookie("loginedUsers",userName,7);
+						alert("登录成功!");
+						location.href = "index.html";
+					}else{
+					//登录失败
+						alert("用户名和密码不匹配，请确认后重试！");
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<!--头部 start-->
+		<div class="login_header_wrap">
+			<div class="w1200">
+				<div class="login_header_logo">
+					<a href="index.html" target="_blank" title="盖象商城">
+						<img src="img/login/register_logo.jpg" width="213" height="90"/>
+					</a>
+					<span>欢迎登录</span>
+				</div>
+			</div>
+		</div>
+		<!--头部 end-->
+		<!--登录主体 start-->
+		<div class="login_content">
+			<div class="w1200">
+				<div class="login_add_pic">
+					<a href="#" target="_blank">
+						<img src="img/login/8d7f94663f19469d2f86b31353148229.gif" title="春季减膘季" width="540" height="360"/>
+					</a>
+				</div>
+				<div class="login_form">
+					<div class="login_codeBox">
+						<div class="loginBox_title">
+							<span>登录盖象商城</span>
+							<a href="register.html" target="_blank">立即注册<i></i></a>
+						</div>
+						<div id="login_form" method="post">
+							<!--用户名框-->
+							<div class="login_field">
+								<label for="userName"></label>
+								<input type="text" name="userName" id="userName" placeholder="会员编号 / 用户名 / 公司名称 / 手机号" />
+								<div class="ueserName_error" id="userNameError">
+									用户名不可为空白
+								</div>
+							</div>
+							<!--用户名框 end-->
+							<!--密码框-->
+							<div class="login_field login_password" style="margin-bottom: 25px;">
+								<label for="user_password"></label>
+								<input type="password" name="user_password" id="user_password" />
+								<div class="ueserName_error" id="passwordError">
+									密码不可为空白
+								</div>
+							</div>
+							<!--密码框end-->
+							<!--自动登录按钮、忘记密码-->
+							<div class="field_remeber">
+								<input type="checkbox" id="remeberMe" />
+								<label for="remeberMe">自动登录</label>
+								<a href="#" target="_blank">忘记密码</a>
+							</div>
+							<!--登录按钮-->
+							<div class="login_submit">
+								<input type="button" id="login" value="登录" style="cursor: pointer;"/>
+							</div>
+						</div>
+						<!--合作账号-->
+						<div class="login_entry">
+							<p>使用合作网站账号登录盖象:</p>
+							<ul>
+								<li><a href="#" target="_blank" class="qq"></a></li>
+								<li><a href="#" target="_blank" class="weibo"></a></li>
+								<li><a href="#" target="_blank" class="txweibo"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--登录主体 end-->
+		<!--尾部 start-->
+		<div class="login_footer">
+			<div class="w1200">
+				<div class="login_footer_link">
+					<a href="#" target="_blank">关于盖网</a>|
+					<a href="#" target="_blank">帮助中心</a>|
+					<a href="#" target="_blank">网站地图</a>|
+					<a href="#" target="_blank">诚聘英才</a>|
+					<a href="#" target="_blank">联系客服</a>|
+					<a href="#" target="_blank">免责声明</a>|
+					<a href="#" target="_blank">隐私保护</a>|
+					<a href="#" target="_blank">站长统计</a>
+				</div>
+				<div class="copyright">
+					 Copyright&copy;g-emall.com&nbsp;|&nbsp;增值电信业务经营许可证：粤B2-20140364&nbsp;|&nbsp;粤ICP备14049968号-2&nbsp;|&nbsp;互联网药品信息服务资格证&nbsp;|&nbsp;网络文化经营许可证&nbsp;|&nbsp;穗公网监备案证第440700500100
+				</div>
+			</div>
+		</div>
+		<!--尾部 end-->
+	</body>
+</html>

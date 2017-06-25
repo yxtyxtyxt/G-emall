@@ -1,0 +1,493 @@
+#banner{
+	width: 100%;
+	min-width: 1200px;
+	height: 449px;
+	position: relative;
+	overflow: hidden;
+	/*background:skyblue;*/
+}
+#banner .banner_pic li{
+	width: 100%;
+	position: relative;
+	float: left;
+	display: block;
+	opacity: 0;
+	margin-right: -100%;
+}
+#banner>.banner_pic>li>a{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
+#banner ul li a img{
+	display: block;
+	width: 1200px;
+	height: 449px;
+	margin: 0 auto;
+}
+.banner_small{
+	position: absolute;
+	top:89%;
+	z-index: 2;
+	padding: 0;
+	margin: 0;
+	left: 50%;
+	margin-left: -100px;
+}
+.banner_small li{
+	display: inline-block;
+}
+.banner_small a:hover{
+	color: #fff!important;
+	background: #C20005!important;
+}
+.banner_small a{
+	display:block;
+	width: 18px;
+	height: 18px;
+	background: #000;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	z-index: 5;
+	font-size: 13px;
+	font-family: "微软雅黑";
+	
+}
+.gx_banner_pic_right{
+	width: 1200px;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -600px;
+}
+#gx_banner_pic_right_wrap{
+	float:right;
+	width: 180px;
+	height: 448px;
+	/*position: absolute;*/
+	/*top: 0;
+	right: 0;*/
+}
+.gx_banner_pic_right #gx_banner_pic_right_wrap a img{
+	width:180px;
+	height:190px;
+	margin-bottom:1px;
+	display:block;
+}
+#banner_wrap_position{
+	width: 1200px;
+	
+	position: absolute;
+	margin:0 auto;
+	left: 50%;
+	margin-left: -600px;
+	background: transparent;
+}
+.gx_banner_info{
+	position: absolute;
+	bottom: 0;
+	width: 1200px;
+	height: 0;
+	left: 50%;
+	margin-left:-600px;
+	
+}
+.gx_banner_info_box{
+	position: absolute;
+	right: 0;
+	width:180px;
+	height: 66px;
+	background: #fff;
+	top:-67px;
+	z-index:5;
+}
+.info_scrollBox{
+	position: relative;
+	overflow: hidden;
+	height: 46px;
+	margin: 10px 0 0 10px;
+	/*background: aqua;*/
+}
+.info_scrollBox ul{
+	position: absolute;
+	left: 0;
+	float: left;
+	top: -25px;
+}
+#banner .info_scrollBox ul li{
+	float: left;
+	width: 158px;
+	height: 25px;
+	line-height: 25px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 12px;
+	color: #666;
+}
+.info_scrollBox ul li a{
+}
+.info_scrollBox ul li span{
+	color: #C20005;
+}
+/*---main----*/
+.fixd_floor{
+	position: fixed;
+	background: url(../img/main/gx_floorNum.png);
+	width: 30px;
+	height: 150px;
+	margin-right: 600px;
+	margin-left: auto;
+	right: 50%;
+	top: 100px;
+	display: none;
+	/*opacity: 0;*/
+}
+.fixd_floor li{
+	/*overflow: hidden;
+	height: 270px;*/
+	height: 30px;
+}
+.fixd_floor a{
+	display: none;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	background: #C20005;
+	color: #fff!important;
+	line-height: 15px;
+	overflow: hidden;
+}
+.checked_li{
+	display: block;
+	height: 30px;
+	width: 30px;
+}
+.checked_li a{
+	display: block!important;
+	
+}
+.gx_main_wrap{
+	width:100%;
+	min-width: 1200px;
+	margin: auto;
+	background: #f5f5f5;
+	padding-bottom: 50px;
+}
+#gx_main{
+	width: 1200px;
+	margin:auto;
+}
+.gx_main_ms{
+	padding-top: 20px;
+	font-family: "微软雅黑";
+	overflow: hidden;
+}
+.gx_main_ms_left{
+	float: left;
+	width:200px;
+	height: 160px;
+	background: url(../img/main/gx_msbg.jpg) no-repeat;
+}
+.gx_main_ms_right{
+	float: left;
+}
+.gx_main_ms_right ul li{
+	float: left;
+	margin-right:1px;
+	width: 249px;
+	height: 160px;
+}
+.gx_recommend{
+	padding-top: 20px;
+	overflow: hidden;
+}
+.gx_recommend ul li{
+	float: left;
+	margin-bottom: 1px;
+}
+.gx_recommend ul li a img{
+	width: 200px;
+	height: 220px;
+}
+.gx_floor_title{
+	background: url(../img/main/gx_border.jpg) repeat-x 0 32px;
+	height: 35px;
+	width: 100%;
+}
+.gx_floor_title img{
+	float: left;
+}
+.gx_floor_title_font{
+	color: #37a4d1;
+	font-family: "微软雅黑";
+	font-size: 24px;
+	float: left;
+	margin: -4px 0 0 15px;
+}
+.title_first{
+	background: url(../img/main/gx_borderSel.png) repeat-x 0 27px;
+	color: #C20005!important;
+}
+.gx_floor_title ul{
+	overflow: hidden;
+}
+.gx_floor_title ul li{
+	width: 120px;
+	float: left;
+	text-align: center;
+	font-family: "宋体";
+	line-height: 35px;
+	margin-left: 40px;
+	color: #555;
+	cursor: pointer;
+	font-size: 12px;
+}
+.floor_main{
+	padding-top: 10px;
+	height: 405px;
+	background: #fff;
+
+}
+.floor_main_left{
+	float: left;
+	width: 180px;
+	margin-left: 10px;
+	overflow: hidden;
+}
+.floor_main_brand{
+	display: block;
+	width: 180px;
+	height: 190px;
+	position: relative;
+	overflow: hidden;
+}
+.floor_main_brand li:nth-child(2),.floor_main_brand li:nth-child(3){
+	opacity: 0;
+}
+.brand_btn{
+	position: absolute;
+	top: 80px;
+	width: 100%;
+	left:0;
+}
+.brand_btn a{
+	display: block;
+	width: 11px;
+	height: 20px;
+	background:url(../img/index_ioc.png) no-repeat;
+	font-size: 0;
+}
+.brand_btn a:nth-child(1){
+	background-position:0 -470px;
+	float: left;
+}
+.brand_btn a:nth-child(2){
+	background-position:-50px -470px ;
+	float: right;
+}
+.floor_main_brand ul li{
+	position: relative;
+	margin-right: -100%;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.floor_main_brand img{
+	width: 140px;
+	height: 42px;
+	margin-bottom: 8px;
+}
+.floor_main_left_list{
+	height: 180px;
+	overflow: hidden;
+	border-top: 1px solid #d1d3d4;
+	margin-top: 15px;
+	padding-top: 10px;
+}
+.floor_main_left_list ul li{
+	float: left;
+	width: 90px;
+	height: 30px;
+	margin-bottom: 5px;
+	text-align: center;
+	line-height: 30px;
+}
+.floor_main_left_list ul li a{
+	font-size: 12px;
+	color: #666;
+}
+a:hover{
+	color: #C20005;
+}
+.floor_main_right_wrap{
+	float: left;
+	margin-left: 10px;
+}
+.floor_main_right{
+	width: 1000px;
+	display: block;
+}
+.floor_main_right_banner{
+	width: 400px;
+	height: 390px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+.floor_main_right_list{
+	width: 600px;
+	float: left;
+}
+.floor_main_right_banner ul li{
+	width: 100%;
+	float: left;
+	margin-right: -100%;
+	position: relative;
+	display: block;
+	opacity:0;
+}
+.floor_main_right_banner ul li:nth-child(1){
+	opacity: 1;
+}
+
+.floor_main_right_banner ul li a img{
+	width: 100%;
+	height: 100%;
+}
+.floor_right_banner_nav{
+	position: absolute;
+	top: 90%;
+	z-index:3;
+	left: 50%;
+	margin-left:-42px;
+}
+.floor_right_banner_nav li{
+	display: inline-block;
+}
+.floor_right_banner_nav .c20005{
+	background: #C20005;
+}
+.floor_right_banner_nav a{
+	font-size: 0;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 5px;
+	background: #6c6c6c;
+	text-align: center;
+}
+.floor_main_right_list_ul1{
+	display: block;
+}
+.floor_main_right_list li{
+	float: left;
+	width: 199px;
+	height: 200px;
+	border-right: 1px solid #eee;
+}
+.floor_main_right_list_ul1 li{
+	border-bottom: 1px solid #eee;
+}
+.floor_main_right_list_ul1 .right_lastLi{
+	border-right:0 ;
+}
+.floor_main_right_list img{
+	width: 199px;
+	height: 200px;
+}
+.floor_main_right_list_ul2 .right_lastLi{
+	border-right:0 ;
+}
+.floor_main_right_list2{
+	/*display: block;*/
+	width: 1000px;
+	position: absolute;
+	display: none;
+}
+.floor_main_right_list2 ul{
+	margin-right:-1px;
+	margin-left: 5px;
+}
+
+.floor_main_right_list2 ul li:first-child{
+	border-left: 1px solid #eee;
+}
+.floor_main_right_list2 ul li:last-child{
+	border-right: 0;
+}
+.floor_main_right_list2 ul li{
+	float: left;
+	width: 158px;
+	height: 195px;
+	padding: 0 20px;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.floor_main_right_list2 ul:nth-child(2) li{
+	border-bottom: 0;
+}
+.floor_main_right_list2_much{
+	margin: 10px 0;
+	color: #232323;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	text-align: left;
+}
+.floor_main_right_list2_much p{
+	display: block;
+	font-size: 16px;
+	color: #C20005;
+}
+.index_guessUlike{
+	margin-top: 30px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+.index_guessUlike .MayBeNextUlike{
+    display: block;
+    float: right;
+    margin-right: 20px;
+    background: url(../img/index_ioc.png) no-repeat 47px -620px;
+    width: 66px;
+    height: 20px;
+    line-height: 22px;
+    margin-top: 16px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.index_guessUlike ul{
+	overflow: hidden;
+}
+.index_guessUlike ul li{
+    float: left;
+    width: 199px;
+    height: 264px;
+    background: #fff;
+    border-right: 1px #eee solid;
+}
+.index_guessUlike ul li span{
+    padding: 5px 0 0 10px;
+    display: block;
+}
+.index_guessUlike ul li i{
+    font-size: 16px;
+    color: #c20005;
+    margin-top:10px;
+    display: block;
+}
+.index_guessUlike ul li:hover{
+	background: #404040;
+}
+.index_guessUlike ul li:hover span{
+	color: #fff;
+}
+.index_guessUlike ul li:hover span i{
+	color: #fff;
+}

@@ -1,0 +1,145 @@
+.right_nav_fixed{
+	width: 30px;
+	height: 100%;
+	background: #1b1b1b;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 10000;
+}
+.right_nav_fixed a:first-child{
+	display: block;
+    border-bottom: 1px #040404 solid;
+    border-top: 1px #040404 solid;
+    height: 133px;
+    width: 100%;
+    margin-top: 140px;
+    text-align: center;
+    writing-mode: lr-tb;
+    color: #fff;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+.right_nav_fixed a:first-child:hover{
+	background-color: #C20005;
+}
+.right_nav_fixed a:first-child:hover .shoppingNum{
+	background-position:-27px -703px;
+	color: #C20005;
+}
+.right_nav_fixed a:first-child .shopCar_logo{
+	display: block;
+    background: url(../img/index_ioc.png) no-repeat 0 -663px;
+    width: 18px;
+    height: 15px;
+    margin: 15px auto;
+}
+.shoppingNum{
+	display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/index_ioc.png) no-repeat 0 -703px;
+    margin: 5px auto;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    word-wrap: normal;
+}
+.myShouCang{
+	position: relative;
+    display: block;
+    height: 32px;
+    width: 100%;
+    background-image: url(../img/index_ioc.png);
+    background-repeat: no-repeat;
+    background-position: 6px -734px;
+    margin-top: 10px;
+    z-index: 1000;
+}
+.myShouCang:hover{
+	background-color: #C20005;
+}
+.myShouCang:hover span b{
+	display: block;
+}
+.myShouCang span{
+	height: 32px;
+    position: absolute;
+    top:0px;
+    right:79px;
+    width: 100%;
+    display: block;
+    z-index: 999;
+}
+.myShouCang span b{
+	display: none;
+    float: left;
+    margin-left: 10px;
+    line-height: 32px;
+    color: #fff;
+    font-size: 12px;
+    width:70px;
+    height: 32px;
+    background: #C20005;
+    text-align: center;
+}
+.a2WeiMa{
+	position: relative;
+    display: block;
+    height: 32px;
+    width: 100%;
+    background: url(../img/index_ioc.png) no-repeat 8px -776px;
+    margin-top: 3px;
+}
+.a2WeiMa:hover{
+	background-color: #C20005;
+}
+.a2WeiMa:hover span{
+	display: block;
+}
+.a2WeiMa span{
+	position: absolute;
+    display: none;
+    left: -145px;
+    top: -100px;
+    width: 143px;
+    background: #efefef;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border: 1px #bdbdbd solid;
+    color: #696969;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+.a2WeiMa span img{
+	display: block;
+	margin: 20px auto 5px auto;
+}
+.right_nav_fixed a:last-child{
+	margin-top: 130px;
+	position: relative;
+    display: block;
+    height: 32px;
+    width: 100%;
+    background: url(../img/index_ioc.png) no-repeat 6px -812px;
+}
+.right_nav_fixed a:last-child:hover{
+	background: #C20005 url(../img/index_ioc.png) no-repeat 6px -812px
+}
+.right_nav_fixed a:last-child:hover span{
+	display: block;
+}
+.right_nav_fixed a:last-child span{
+	position: absolute;
+	display: none;
+	width:70px;
+	height: 32px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	background: #C20005;
+	top: 0;
+	right:29px;
+	line-height: 32px;
+}

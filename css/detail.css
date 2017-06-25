@@ -1,0 +1,789 @@
+body{
+	font-family: "微软雅黑";
+}
+a{
+	font-size: 12px;
+}
+.company{
+	float: left;
+	margin-left: 20px;
+	width: 470px;
+	font-family: "微软雅黑";
+}
+.company li{
+	float: left;
+	height: 46px;
+	border-left: 1px dashed #bfbfbf;
+	margin: 25px 16px 0 0;
+	color: #323333;
+	font-size: 14px;
+}
+.company li:first-child a{
+	display: block;
+	font-size: 13px;
+	width: 160px;
+	height: 20px;
+	padding-left: 15px;
+	line-height: 20px;
+	color: #323333;
+}
+.company li:first-child span{
+	display: block;
+	padding-left: 15px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #ccc;
+}
+.company_grade{
+	float: left;
+	margin-left: 5px;
+	width: 170px;
+	position: relative;
+	height: 51px;
+	position: relative;
+}
+.company_grade li{
+	float: left;
+	border: 0!important;
+	margin: 0!important;
+	width: 53px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+.company_grade .icon{
+	position: absolute;
+	right:0;
+	width:7px;
+	background: url(../img/phone-ico.png) no-repeat 0 -297px;
+	top: 22px;
+}
+.shouCangShop_wrap{
+	width: 100%;
+	min-width: 1200px;
+	height: 105px;
+	border-top: 1px solid #d5d5d5;
+}
+.shouCangShop{
+	width: 1200px;
+	margin: auto;
+	position: relative;
+}
+.shouCangShop div{
+	font-size: 14px;
+	font-family: "微软雅黑";
+    width: 68px;
+    height: 17px;
+    line-height: 17px;
+    margin: 45px 20px 0 0;
+    cursor: pointer;
+    background: url(../img/phone-ico.png) no-repeat 0px -361px;
+    padding-left: 25px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+}
+.detail_main_wrap{
+	width: 100%;
+	min-width: 1200px;
+	margin: auto;
+	background: #F5F5F5;
+	padding-bottom:50px;
+}
+.detail_main{
+	width: 1200px;
+	margin: auto;
+	overflow: hidden;
+}
+.detail_main_left{
+	float: left;
+	width: 990px;
+	overflow: hidden;
+}
+.blow_up{
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	margin-top: 15px;
+	overflow: hidden;
+	
+}
+.leftBien{
+	float: left;
+	width: 420px;
+	/*overflow: hidden;*/
+}
+.bienImg{
+	width: 420px;
+	/*height: 420px;*/
+	border-right: 1px solid #E6E6E6;
+	border-bottom: 1px solid #E6E6E6;
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+	margin-bottom: 10px;
+}
+.imgZoom{
+	position: relative;
+	display: block;
+	width: 420px;
+	height: 420px;
+	float: left;
+}
+.imgZoom img{
+	position: absolute;
+}
+.imgZoom img:first-child{
+	z-index:2;
+}
+.zhe{
+	width: 420px;
+	height: 420px;
+	background: transparent;
+	position: absolute;
+	z-index: 999;
+	left: 0;
+	top:0;
+}
+.mirror{
+	position: absolute;
+	width: 205px;
+	height:205px;
+	background:#666;
+	opacity: 0.2;
+	border: 1px solid #eee;
+	left: 0;
+	top: 0;
+	z-index: 50;
+	display: none;
+}
+.bigImg{
+	position: absolute;
+	right: -430px;
+	border: 1px solid #E6E6E6;
+	width: 420px;
+	height: 420px;
+	overflow: hidden;
+	z-index: 100;
+	display: none;
+}
+.bigImg img{
+	position: absolute;
+	display: none;
+}
+.imgUl{
+	clear: both;
+	width: 420px;
+	height:65px;
+}
+.items{
+	float: left;
+	position: relative;
+	width: 365px;
+	height: 63px;
+	overflow: hidden;
+	margin-left:10px;
+}
+.prev{
+	width: 12px;
+    height: 20px;
+    background:url(../img/phone-ico.png) no-repeat 0 -414px;
+    cursor: pointer;
+    float: left;
+    margin: 21px 0 0 6px;
+}
+.next{
+	width: 12px;
+    height: 20px;
+    background:url(../img/phone-ico.png) no-repeat -39px -414px;
+    cursor: pointer;
+    float: right;
+    margin: 21px 0 0 6px;
+}
+.items ul li{
+	float: left;
+	width: 73px;
+	text-align: center;
+}
+.items ul li img{
+	border: 1px solid #E6E6E6;
+}
+.bianHao{
+	float: left;
+}
+.bianHao li{
+	float: left;
+    color: #8b8b8b;
+    margin: 10px 0 20px 30px;
+    font-size: 12px;
+}
+.bianHao li a{
+	background: url(../img/phone-ico.png) no-repeat;
+	height: 14px;
+    line-height: 15px;
+    display: block;
+    padding-left: 18px;
+    color: #8b8b8b;
+}
+.bianHao li:nth-child(2) a{
+	background-position: 0 -446px;
+}
+.bianHao li:nth-child(3) a{
+	background-position: 0 -485px;
+}
+/*----缩略图右侧（规格、购买）------*/
+.rightBien{
+	float: left;
+	width: 568px;
+	position: relative;
+}
+.rightBien h2{
+	font-size: 16px;
+	color:#323232;
+	width: 525px;
+	overflow: hidden;
+	line-height: 20px;
+	margin: 15px 0 0 20px;
+	font-weight: 600;
+	height: 20px;
+}
+.gray_bg{
+	background: url(../img/detail/details_bg2.jpg) no-repeat;
+	width: 100%;
+	height: 133px;
+	margin-top: 20px;
+}
+.gray_bg li{
+	float: left;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 10px;
+    width: 68px;
+    color: #8b8b8b;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.gray_bg .jiaGe{
+	width: 400px;
+	font-size:30px;
+	font-family: "微软雅黑";
+	color: #C20005;
+}
+.rightBien dl dt{
+	font-size: 12px;
+	color: #8B8B8B;
+	width: 68px;
+	margin-left: 20px;
+	height: 35px;
+    line-height: 35px;
+    margin-top: 10px;
+    float: left;
+}
+.rightBien dl dd{
+	float: left;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 10px;
+}
+.bigAddress{
+	width: 100%;
+}
+
+.bigAddress dd{
+	width:480px;
+	font-size: 12px;
+}
+.bigAddress dd span{
+	float: left;
+	color: #000;
+	min-width: 50px;
+	font-family: "微软雅黑";
+}
+.bigAddress dd .address span{
+	color: #5d5d5d;
+}
+.bigAddress dd .address{
+	float: left;
+	height: 25px;
+	position: relative;
+	border-radius: 2px;
+    border: 1px #d7d7d7 solid;
+    line-height: 25px;
+    margin-top: 3px;
+    padding-left: 10px;
+    min-width: 70px;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+    z-index: 99;
+}
+.address i{
+	background:url(../img/index_ioc.png) no-repeat 0 -347px;
+    display: block;
+    float: right;
+    width: 5px;
+    height: 3px;
+    margin: 11px 4px 0 0;
+}
+#bien_count{
+	display: block;
+    float: left;
+    height: 30px;
+    width: 60px;
+    border: 1px #bcbbc1 solid;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #767676;
+}
+.ad{
+	float: left;
+	margin-left:5px;
+}
+.ad i{
+	width: 14px;
+    height: 14px;
+    display: block;
+    cursor: pointer;
+    background: url(../img/phone-ico.png) no-repeat;
+}
+.ad i:first-child{
+	background-position: 0 -540px;
+}
+.ad i:last-child{
+	background-position: -28px -540px;
+	margin-top: 4px;
+}
+.countBox{
+	width: 480px;
+}
+.countBox span:last-child{
+	margin-left: 18px;
+	color: #5c5d5d;
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+.buyNow a{
+	float: left;
+	margin-left: 10px;
+	width: 170px;
+	height: 41px;
+	line-height: 41px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	background: #C20005;
+	color: #fff;
+}
+.buyNow a:last-child{
+	background: #f2782f url(../img/phone-ico.png) no-repeat 15px -557px;
+	margin-left: 15px;
+	
+}
+.bien_moreDetail{
+	margin-top: 20px;
+}
+.bien_moreDetail_left{
+	width: 208px;
+	float: left;
+}
+.shop_info{
+	border: 1px #e6e6e6 solid;
+    background: #fff;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.shop_info_title{
+	color: #323333;
+    background: url(../img/phone-ico.png) no-repeat 13px -611px;
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px #e6e6e6 solid;
+    overflow: hidden;
+    text-indent: 50px;
+    font-size: 12px;
+}
+.shop_info ul{
+	margin: 5px 0 0 25px;
+	overflow: hidden;
+}
+.shop_info ul li{
+	float: left;
+    width: 53px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+}
+.shop_info ul li:nth-child(4),.shop_info ul li:nth-child(5){
+	color: #C20005;
+}
+.shop_info ul li:nth-child(6){
+	color: yellowgreen;
+}
+.shop_info a{
+	width: 70px;
+    height: 26px;
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    float: left;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 12px;
+    background: url(../img/phone-ico.png) no-repeat;
+}
+.shop_info a:nth-last-child(2){
+	background-position:0 -713px;
+	margin-left: 28px;
+}
+.shop_info a:last-child{
+	background-position: -84px -713px;
+	margin-left: 15px;
+}
+.shop_nav_left{
+	border: 1px solid #e6e6e6;
+	margin-top: 15px;
+}
+.shop_nav_classify{
+	height: 48px;
+    font-size: 14px;
+    color: #323333;
+    padding-left: 33px;
+    line-height: 48px;
+    background:#f9f9f9 url(../img/phone-ico.png) no-repeat 10px -750px;
+    font-weight: 600;
+}
+#nav_left li{
+	position: relative;
+    min-height: 36px;
+    line-height: 36px;
+    border-top: 1px #e6e6e6 solid;
+    background:#fff url(../img/phone-ico.png) no-repeat 8px -796px;
+    cursor: pointer;
+}
+#nav_left li span a{
+	font-size: 12px;
+	line-height: 36px;
+}
+#nav_left li span{
+	margin-left: 35px;
+    width: 160px;
+    overflow: hidden;
+    height: 36px;
+    display: block;
+}
+.shop_nav_classify_more{
+	color: #323333;
+    width: 171px;
+    min-height: 50px;
+    background: #fff;
+    border-top: 1px #e6e6e6 solid;
+    padding-left: 35px;
+    display:none;
+}
+.d_block{
+	display: block;
+}
+.sellingHot{
+    border: 1px #e6e6e6 solid;
+    margin-top: 15px;
+    background: #fff;
+}
+.soHot_title{
+	height: 48px;
+    font-size: 14px;
+    color: #323333;
+    padding-left: 33px;
+    line-height: 48px;
+    background:#f9f9f9 url(../img/phone-ico.png) no-repeat 10px -750px;
+    font-weight:600;
+}
+.sellingHot ul{
+    width: 185px;
+    margin: auto;
+}
+.sellingHot ul li{
+    height: 94px;
+    border-bottom: 1px #dadada dashed;
+}
+.sellingHot ul li .imgs{
+    display: block;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 20px;
+}
+.bien_name_money{
+    float: left;
+    color: #323232;
+    margin: 20px 0 0 5px;
+    width: 120px;
+}
+.bien_name_money a{
+	color: #323232;
+    display: block;
+    width: 119px;
+    height: 37px;
+    overflow: hidden;
+}
+.bien_name_money span{
+    color: #c20005;
+    font-family: "微软雅黑";
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+/*---------*/
+.bien_moreDetail_right{
+    width: 769px;
+    float: right;
+    background: #fff;
+}
+.bien_moreDetail_right_title{
+	font-size: 14px;
+	color: #323333;
+	overflow: hidden;
+}
+.bien_moreDetail_right_title ul .xuanZhong{
+	border-bottom: 0;
+    border-top: 3px #c20005 solid;
+}
+.bien_moreDetail_right_title ul li{
+    float: left;
+    width: 126px;
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px #e8e8e8 solid;
+    border-top: 1px #e8e8e8 solid;
+    border-right: 1px #e8e8e8 solid;
+    text-align: center;
+    cursor: pointer;
+}
+.bien_moreDetail_right_title div:last-child{
+	width: 250px;
+	height: 50px;
+	float: left;
+}
+.tab_info{
+	color: #323333;
+    padding: 25px 20px;
+    line-height: 25px;
+}
+.tab_info span{
+	color: #8B8B8B;
+	font-size: 12px;
+}
+.imgShow{
+	overflow: hidden;
+}
+.CP_canShu{
+    padding: 5px 20px;
+    line-height: 22px;
+    color: #999999;
+    font-family: tahoma, arial, 微软雅黑, sans-serif;
+    font-size: 12px;
+    background-color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.CP_canShu span{
+	margin: 0px;
+    padding: 0px;
+    font-weight: 700;
+    float: left;
+}
+.bien_moreDetail_right_main{
+	font-size: 12px;
+}
+.imgShow ul li p{
+	line-height:18px;
+}
+/*--客户评价--*/
+.clients_talk{
+	
+}
+.clients_talk_title{
+	height: 95px;
+	padding-top: 25px;
+	color: #000;
+}
+.clients_talk_title_left{
+    float: left;
+    font-size: 12px;
+    margin-left: 20px;
+    width: 150px;
+    border-right: 1px #d3d3d3 dotted;
+}
+.clients_talk_title_left span{
+    color: #c20005;
+    font-size: 50px;
+    font-family: "微软雅黑";
+    margin-left: 13px;
+}
+.clients_talk_title_right{
+    float: left;
+    margin-left: 40px;
+    width: 442px;
+}
+.clients_talk_title_right ul{
+	/*float: left;*/
+	margin-top: 5px;
+}
+.clients_talk_title_right ul li{
+	float: left;
+	margin-left:10px;
+	border: 1px solid #E6E6E6;
+	color: #C20005;
+	height: 24px;
+	line-height: 24px;
+	padding: 0 12px;
+}
+.clients_talk_2title{
+    border-top: 1px #e8e8e8 solid;
+    overflow: hidden;
+}
+.clients_talk_2title ul{
+	float: left;
+}
+.clients_talk_2title ul li{
+	float: left;
+    border-right: 1px #e8e8e8 solid;
+    height: 42px;
+    line-height: 42px;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0 15px;
+}
+.clients_talk_2title ul li:first-child{
+	border-bottom:#fff;
+}
+.clients_talk_2title .but{
+    display: block;
+    float: right;
+    width: 71px;
+    height: 27px;
+    margin: 8px 8px 0 0;
+    line-height: 27px;
+    color: #fff;
+    padding-left: 10px;
+    background: #767676 url(../img/phone-ico.png) no-repeat 65px -945px;
+    cursor: pointer;
+}
+.pingJia_wrap{
+    border-top: 1px #e8e8e8 solid;
+    margin: -1px 0 100px 0;
+}
+.pingJia{
+    width: 744px;
+    margin: auto;
+}
+.pingJia ul li{
+    margin-top: 15px;
+    border-bottom: 1px #e8e8e8 solid;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+.boom{
+    font-size: 12px;
+    color: #373737;
+    width: 305px;
+    float: left;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.math_star{
+	float: left;
+    width: 110px;
+    margin-left: 30px;
+}
+.math_star img{
+	width:15px;
+	height: 15px;
+	margin-left: 5px;
+    display: block;
+    float: left;
+}
+.who_time{
+	float: right;
+    width: 125px;
+    margin-left: 20px;
+}
+.who_time span{
+	line-height: 24px;
+}
+.who_time span:last-child{
+	background: url(../img/phone-ico.png) no-repeat -59px -951px;
+	padding-left: 20px;
+}
+.detail_main_right{
+    float: right;
+    width: 200px;
+    border: 1px #e6e6e6 solid;
+    background: #fff;
+    margin-top: 15px;
+    font-size: 12px;
+}
+.detail_main_right_title{
+	background: url(../img/detail/pord_line.png) repeat-x;
+    height: 18px;
+    line-height: 18px;
+    width: 168px;
+    margin: 10px auto 0 auto;
+}
+.detail_main_right_title span{
+    width: 65px;
+    display: block;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+}
+.detail_guessUlike{
+	width: 168px;
+	margin: auto;
+}
+.detail_guessUlike li{
+	margin-top: 13px;
+    height: 165px;
+    border-bottom: 1px #e6e2e2 dashed;
+    color: #636363;
+    text-align: center;
+}
+.detail_guessUlike li a:first-child{
+	display: block;
+	width: 110px;
+	height: 110px;
+	margin: auto;
+}
+.detail_guessUlike li span{
+    color: #323333;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    display: block;
+    margin: 5px 0;
+}
+.gr_renovateBut{
+	color: #636363;
+    display: block;
+    width: 58px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 42px;
+    border: 1px #d4d4d4 solid;
+    margin: 20px auto;
+    background: url(../img/phone-ico.png) no-repeat 18px -862px;
+}
+#right{
+	position: fixed;
+	right:0;
+	top: 50%;
+	width: 100px;
+	height: 10px;
+	background: darkcyan;
+	z-index: 100000;
+}
+.gray_bg .boom{
+	width:100px;
+	margin-left:28px;
+}

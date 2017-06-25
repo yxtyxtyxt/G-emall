@@ -1,0 +1,63 @@
+body,h1,h2,h3,h4,p,img,ul,li,select,form,input,button,dl,dd,dt,ol{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	background: transparent;
+	font-size: 100%;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+input,textarea{
+	vertical-align: middle;
+	border: 0 none;
+}
+i{
+	font-style: normal;
+}
+b{
+	font-weight: 500;
+}
+tbody{
+	display: table-row-group;
+	vertical-align: middle;
+}
+td,th{
+    display: table-cell;
+    vertical-align: inherit;
+}
+/*a:hover{
+	color: #C20005;
+}*/
+.mt_30{
+	margin-top: 30px;
+}
+.ml_30{
+	margin-left: 30px;
+}
+.m_a{
+	margin: auto;
+}
+.w1200{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.fr{
+	float: right;
+}
+.right_nav_fixed{
+	width: 30px;
+	height: 100%;
+	background: #1b1b1b;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 10000;
+}

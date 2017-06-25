@@ -1,0 +1,139 @@
+#gx_footer{
+	height: 460px;
+	background: #fff;
+	border-top: 2px solid #C20005;
+	width: 100%;
+	min-width: 1200px;
+	padding-top: 20px;
+}
+.gx_footer_promotion{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top:30px ;
+}
+.gx_footer_promotion_dl{
+	overflow: hidden;
+}
+.gx_footer_promotion_dl dt{
+	background: url(../img/shop_ico.png) no-repeat 0 -98px;
+	float: left;
+	width: 54px;
+	height: 54px;
+	text-align:center;
+	line-height: 54px;
+	font-size: 26px;
+	color: #fff;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	margin-left: 28px;
+}
+.gx_footer_promotion_dl dd{
+	float: left;
+	color: #696969;
+	font-size: 14px;
+	font-family: "微软雅黑"; 
+	margin:2px 0 0 20px;
+	width: 130px;
+}
+.gx_footer_promotion_dl dd span{
+	font-size: 18px;
+	color: #333;
+	display: block;
+	margin-bottom:5px;
+}
+#last_dt{
+	 background: url(../img/shop_ico.png) no-repeat 0 -156px;
+}
+#last_dd{
+	font-size: 18px;
+}
+#last_span{
+	font-weight: 600;
+}
+.gx_footer_promotion_list{
+	border-top: 1px solid #dcdcdc;
+	margin-top: 18px;
+	padding-top: 25px;
+	display: block;
+	overflow: hidden;
+}
+.gx_footer_promotion_list dl{
+	float: left;
+	margin: 0 40px;
+	width: 120px;
+}
+.gx_footer_promotion_list dl dt{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.gx_footer_promotion_list dl dd{
+	font-size: 12px;
+	line-height: 23px;
+}
+.gx_footer_promotion_list dl dd a{
+	display: block;
+	color: #555;
+	overflow: hidden;
+	width: 100%;
+	height: 25px;
+}
+.gx_footer_promotion_list dl dd a:hover{
+	color: #C20005;
+}
+.weiXin2{
+	float: right;
+	margin-right: 90px;
+	width: 98px;
+	overflow: hidden;
+}
+.weiXin2 p{
+	font-size: 12px;
+	text-align: center;
+	color: #646464;
+}
+/*---------------------LINK----------------------------*/
+.gx_footer_link{
+	width: 100%;
+	min-height: 170px;
+	margin-top: 27px;
+	height: auto;
+	background: #333;
+}
+.gx_footer_link_main{
+	width: 1200px;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+.gx_footer_link_main a{
+	color: #fff;
+	font-size: 12px;
+	padding: 0 10px;
+}
+.Yo{
+	padding:30px 0;
+}
+.linkList{
+	font-size: 12px;
+	margin-top:5px;
+	line-height:20px;
+}
+.linkList a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.linkImg{
+	margin-top:30px;
+	padding-bottom:20px ;
+	overflow: hidden;
+}
+.linkImg a{
+	float: left;
+	margin: 0 auto;
+}
+.linkImg a:nth-child(1){
+	margin:5px 10px 0 415px;
+}
+/*.linkImg a:nth-child(3){
+	margin-top:10px;
+}*/
